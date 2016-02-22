@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+</head>
+<body>
+Redirecting...
+<script>
+  var id = location.pathname.replace(/^(?:\/id\/)/i, '');
+  location.href = 'https://github.com/zhanhongtao/blog/issues/' +
+    (id = Number(id), isNaN(id) ? '' : id);
+</script>
+</body>
+</html>
