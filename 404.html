@@ -8,8 +8,16 @@
 Redirecting...
 <script>
   var id = location.pathname.replace(/^(?:\/id\/)/i, '');
+  var maps = {
+    'animation': 'https://http://zhanhongtao.github.io/blog/fe/animation.html'
+  };
+  var key = String(id).toLowerCase();
+  if (maps[key]) {
+    location.href = maps[key];
+  } else {
   location.href = 'https://github.com/zhanhongtao/blog/issues/' +
-    (id = Number(id), isNaN(id) ? '' : id);
+    (id = Number(id), isNaN(id) ? '' : id);  
+  }
 </script>
 </body>
 </html>
